@@ -1,0 +1,24 @@
+{
+  "name": "nosleep",
+  "version": "1.0.0",
+  "description": "Prevent mobile devices from going to sleep",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BHSPitMonkey/NoSleep.js.git"
+  },
+  "keywords": [
+    "standby",
+    "wakelock",
+    "mobile"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BHSPitMonkey/NoSleep.js/issues"
+  },
+  "homepage": "https://github.com/BHSPitMonkey/NoSleep.js#readme"
+}

@@ -1,22 +1,26 @@
 # NoSleep.js
 
-Prevent display sleep and enable wake lock in all Android and iOS web browsers.
+A fork of github.com/richtr/NoSleep.js which works as a Node module.
 
-Check out the [live demo](https://richtr.github.io/NoSleep.js/example.html) in any Android or iOS web browser.
+Prevents display sleep and enable wake lock in all Android and iOS web browsers.
 
 ## Installation
 
-This library is available on [Bower](http://bower.io/) as **nosleep**.
+I'm not publishing this in the npm registry because it would make more sense for the upstream repo to do that eventually.
 
-    $> bower install nosleep
+You can still install this fork using npm using this format:
 
-Alternatively, you can manually add [NoSleep.js](https://github.com/richtr/NoSleep.js/blob/master/NoSleep.js) to your project (or the [minified version](https://github.com/richtr/NoSleep.js/blob/master/NoSleep.min.js)).
+    $ npm install BHSPitMonkey/NoSleep.js
 
 ## Usage
 
 Create a new NoSleep object and then enable or disable it when needed as follows:
 
 ``` javascript
+var NoSleep = require("nosleep");
+// Or ES6-style:
+// import NoSleep from "nosleep";
+
 var noSleep = new NoSleep();
 
 function enableNoSleep() {
@@ -24,7 +28,7 @@ function enableNoSleep() {
   document.removeEventListener('touchstart', enableNoSleep, false);
 }
 
-// Enable wake lock.
+// Enable NoSleep.
 // (must be wrapped in a user input event handler e.g. a mouse or touch handler)
 document.addEventListener('touchstart', enableNoSleep, false);
 
@@ -36,5 +40,7 @@ noSleep.disable();
 ```
 
 ## License
+
+Same as upstream:
 
 MIT. Copyright (c) Rich Tibbett
